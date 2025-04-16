@@ -49,6 +49,42 @@ struct WeatherTabView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.mint.opacity(0.2))
-        ignoresSafeArea()
+        .ignoresSafeArea()
+    }
+}
+
+struct NewsTabView: View{
+    var body: some View {
+        VStack {
+            Image(systemName: "newspaper")
+            .resizable()
+            .frame(width: 100, height: 100)
+            Text("ニュース")
+            .font(.system(size: 20))
+        }
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+
+struct HomeTabView_Previews: PreviewProvider {
+    static var previews: some View {
+        HomeTabView()
+    }
+}
+
+struct WeatherTbaView_Previews: PreviewProvider {
+    static var previews: some View {
+        WeatherTabView()
+    }
+}
+
+struct NewsTabView_Previews: PreviewProvider {
+    static var previews: some View {
+        NewsTabView()
     }
 }
