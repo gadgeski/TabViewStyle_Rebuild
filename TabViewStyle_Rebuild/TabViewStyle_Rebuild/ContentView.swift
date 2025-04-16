@@ -1,3 +1,10 @@
+//
+//  ContentView.swift
+//  TabViewStyle_Rebuild
+//
+//  Created by Dev Tech on 2025/04/16.
+//
+
 import SwiftUI
 
 struct ContentView: View {
@@ -6,8 +13,8 @@ struct ContentView: View {
     var body: some View {
         TabView(selection: $selectedTag) {
             HomeTabView()
-            .tabItem { 
-                Label("Home", systemImage: "house") 
+            .tabItem {
+                Label("Home", systemImage: "house")
                 }.tag(1)
 
             WeatherTabView()
@@ -17,7 +24,7 @@ struct ContentView: View {
                 .badge(1)
 
             NewsTabView()
-            .tabItem { 
+            .tabItem {
                 Label("ニュース", systemImage: "newspaper")
                  }.tag(3)
                  .badge(2)
