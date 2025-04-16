@@ -3,8 +3,8 @@ import SwiftUI
 struct ContentView: View {
     @State var selectedTag =1
 
-    var body: some view {
-        Tabview(selection: $selectedTag) {
+    var body: some View {
+        TabView(selection: $selectedTag) {
             HomeTabView()
             .tabItem { 
                 Label("Home", systemImage: "house") 
