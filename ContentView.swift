@@ -77,7 +77,7 @@ struct HomeTabView_Previews: PreviewProvider {
     }
 }
 
-struct WeatherTbaView_Previews: PreviewProvider {
+struct WeatherTabView_Previews: PreviewProvider {
     static var previews: some View {
         WeatherTabView()
     }
